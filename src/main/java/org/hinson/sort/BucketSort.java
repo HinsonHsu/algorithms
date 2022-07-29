@@ -1,8 +1,11 @@
 package org.hinson.sort;
 
 import java.util.Arrays;
-import java.util.Random;
 
+/**
+ * created on 2022-07-29
+ * 基数排序
+ */
 public class BucketSort {
 
     public int[] sort(int[] nums) {
@@ -28,9 +31,9 @@ public class BucketSort {
         int bucketCount = (maxValue - minValue) / bucketSize + 1;
         int[][] buckets = new int[bucketCount][0];
 
-        for (int i = 0; i < arr.length; i++) {
-            int index = (arr[i] - minValue) / bucketSize;
-            buckets[index] = arrAppend(buckets[index], arr[i]);
+        for (int j : arr) {
+            int index = (j - minValue) / bucketSize;
+            buckets[index] = arrAppend(buckets[index], j);
         }
 
         int arrIndex = 0;
@@ -62,20 +65,5 @@ public class BucketSort {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
-    }
-
-    public static void main(String[] args) {
-        int[] nums = new int[100];
-        Random random = new Random();
-        for (int i = 0; i < nums.length; i++) {
-
-            nums[i] = random.nextInt(100);
-        }
-        System.out.println(Arrays.toString(nums));
-
-        BucketSort bucketSort = new BucketSort();
-        int[] newArr = bucketSort.sort(nums);
-        System.out.println(Arrays.toString(newArr));
-
     }
 }
