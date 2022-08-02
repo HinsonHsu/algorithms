@@ -2,7 +2,7 @@ package org.hinson.sort;
 
 import java.util.Arrays;
 
-public class RadixSort {
+public class RadixSort implements ISort {
 
     public int[] sort(int[] nums) {
         int[] arr = Arrays.copyOf(nums, nums.length);

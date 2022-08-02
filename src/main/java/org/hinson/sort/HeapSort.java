@@ -6,7 +6,7 @@ import java.util.Arrays;
  * created on 2022-07-29
  * 堆排序
  */
-public class HeapSort {
+public class HeapSort implements ISort {
 
     public int[] sort(int[] nums) {
         int[] arr = Arrays.copyOf(nums, nums.length);

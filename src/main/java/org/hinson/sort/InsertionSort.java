@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 插入排序
  * created on 2022-07-27
  */
-public class InsertionSort {
+public class InsertionSort implements ISort {
 
     public int[] sort(int[] nums) {
         int[] arr = Arrays.copyOf(nums, nums.length);

@@ -6,15 +6,15 @@ import java.util.Arrays;
  * 归并排序，空间复杂度O(N)
  * created on 2022-07-27
  */
-public class MergeSort {
+public class MergeSort implements ISort {
 
     public int[] sort(int[] nums) {
         if (nums.length < 2) {
             return nums;
         }
         int mid = nums.length / 2;
-        int[] left = Arrays.copyOfRange(nums, 0, mid);
-        int[] right = Arrays.copyOfRange(nums, mid, nums.length);
+        int[] left = sort(Arrays.copyOfRange(nums, 0, mid));
+        int[] right = sort(Arrays.copyOfRange(nums, mid, nums.length));
 
         int[] arr = new int[left.length + right.length];
         int m = 0, i = 0, j = 0;

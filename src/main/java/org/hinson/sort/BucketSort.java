@@ -6,7 +6,7 @@ import java.util.Arrays;
  * created on 2022-07-29
  * 基数排序
  */
-public class BucketSort {
+public class BucketSort implements ISort {
 
     public int[] sort(int[] nums) {
         int[] arr = Arrays.copyOf(nums, nums.length);

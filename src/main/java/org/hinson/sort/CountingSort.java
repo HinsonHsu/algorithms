@@ -6,7 +6,7 @@ import java.util.Arrays;
  * created on 2022-07-29
  * 计数排序
  */
-public class CountingSort {
+public class CountingSort implements ISort {
 
     public int[] sort(int[] nums) {
         int[] arr = Arrays.copyOf(nums, nums.length);

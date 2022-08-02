@@ -6,7 +6,7 @@ import java.util.Arrays;
  * 冒泡排序
  * created on 2022-07-27
  */
-public class BubbleSort {
+public class BubbleSort implements ISort {
 
     public int[] sort(int[] nums) {
         // 拷贝原数组
@@ -15,7 +15,7 @@ public class BubbleSort {
         for (int i = 1; i < arr.length; i++) {
             // 用于标记此次循环是否交换过，无交换则说明排序完成
             boolean flag = true;
-            for (int j = 0; j < arr.length; j++) {
+            for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
                     flag = false;

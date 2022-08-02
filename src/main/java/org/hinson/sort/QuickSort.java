@@ -4,7 +4,7 @@ package org.hinson.sort;
  * 快速排序
  * created on 2022-07-27
  */
-public class QuickSort {
+public class QuickSort implements ISort {
 
     public int[] sort(int[] nums) {
         quickSort(nums, 0, nums.length - 1);
