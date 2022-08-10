@@ -21,7 +21,6 @@ public class MyHttpServer {
             });
             server.setExecutor(Executors.newCachedThreadPool());
             server.start();
-            System.out.println("");
         } catch (IOException e) {
             e.printStackTrace();
         }
