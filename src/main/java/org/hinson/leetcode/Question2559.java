@@ -17,6 +17,9 @@ public class Question2559 {
         add('u');
     }};
 
+    /**
+     * 前缀和
+     */
     public int[] vowelStrings(String[] words, int[][] queries) {
         int[] sum = new int[words.length + 1];
 
