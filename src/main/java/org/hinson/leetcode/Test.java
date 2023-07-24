@@ -1,5 +1,6 @@
 package org.hinson.leetcode;
 
+import java.math.BigDecimal;
 import java.util.concurrent.TimeUnit;
 
 public class Test {
@@ -37,6 +38,7 @@ public class Test {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        testAtomic();
+        BigDecimal bigDecimal = new BigDecimal(10);
+        bigDecimal.multiply(bigDecimal);
     }
 }
