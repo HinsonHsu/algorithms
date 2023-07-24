@@ -9,11 +9,26 @@ import java.util.Queue;
 /**
  * trie 树
  */
+
 public class Question662 {
 
+    int max;
+
     public int widthOfBinaryTree(TreeNode root) {
+        List<Integer> res = new LinkedList<>();
+        dfs(root, res, 1, 1);
+        return max;
+    }
 
-        return 0;
-
+    private void dfs(TreeNode node, List<Integer> res, int level, int i) {
+        if (node == null) {
+            return;
+        }
+        if (level > res.size()) {
+            res.add(i);
+        }
+        max = Math.max(max, i - res.get(level) + 1);
+        dfs(node.left, res, level + 1, i * 2);
+        dfs(node.right, res, level + 1, i * 2 + 1);
     }
 }
