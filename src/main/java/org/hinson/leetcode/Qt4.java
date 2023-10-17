@@ -37,8 +37,4 @@ public class Qt4 {
         }
         return -1;
     }
-
-    public double findKth(int nums1, int l1, int r1, int[] nums2, int l2, int r2, int k) {
-        return -1;
-    }
 }
