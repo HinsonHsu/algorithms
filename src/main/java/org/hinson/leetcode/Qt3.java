@@ -2,11 +2,11 @@ package org.hinson.leetcode;
 
 import java.util.*;
 
-public class Question3 {
+public class Qt3 {
 
     public static void main(String[] args) {
         String s = " ";
-        int res = new Question3().lengthOfLongestSubstring(s);
+        int res = new Qt3().lengthOfLongestSubstring(s);
         System.out.println(res);
     }
 

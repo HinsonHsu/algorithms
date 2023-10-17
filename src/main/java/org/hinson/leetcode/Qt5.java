@@ -2,7 +2,7 @@ package org.hinson.leetcode;
 
 import java.util.Arrays;
 
-public class Question5 {
+public class Qt5 {
 
     public String longestPalindrome(String s) {
         if (s == null || "".equals(s)) {
@@ -65,7 +65,7 @@ public class Question5 {
     public static void main(String[] args) {
         // #b#a#b#a#d
         String s = "cbabbc";
-        String res = new Question5().longestPalindrome2(s);
+        String res = new Qt5().longestPalindrome2(s);
         System.out.println(res);
     }
 }

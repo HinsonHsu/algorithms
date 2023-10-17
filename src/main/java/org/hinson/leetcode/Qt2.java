@@ -7,7 +7,7 @@ package org.hinson.leetcode;
  * 5->6->4
  * 7->0->8
  */
-public class Question2 {
+public class Qt2 {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;

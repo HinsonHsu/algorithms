@@ -1,6 +1,6 @@
 package org.hinson.leetcode;
 
-public class Question6 {
+public class Qt6 {
 
     public String convert(String s, int numRows) {
         int sLen = s.length();
@@ -25,7 +25,7 @@ public class Question6 {
 
     public static void main(String[] args) {
         String s = "ABCDE";
-        String res = new Question6().convert(s, 4);
+        String res = new Qt6().convert(s, 4);
         System.out.println(res);
     }
 }
