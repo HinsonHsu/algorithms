@@ -25,5 +25,5 @@ public class Q9 {
         }
         return out.pop();
     }
-    
+
 }
