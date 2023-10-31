@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 public class Q31 {
 
-
     public boolean isPopOrder(int[] pushSequence, int[] popSequence) {
         int n = pushSequence.length;
         Deque<Integer> stack = new LinkedList<>();

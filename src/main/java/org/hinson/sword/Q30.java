@@ -5,8 +5,8 @@ import java.util.LinkedList;
 
 public class Q30 {
 
-    private Deque<Integer> dataStack = new LinkedList<>();
-    private Deque<Integer> minStack = new LinkedList<>();
+    private final Deque<Integer> dataStack = new LinkedList<>();
+    private final Deque<Integer> minStack = new LinkedList<>();
 
     public void push(int node) {
         dataStack.push(node);

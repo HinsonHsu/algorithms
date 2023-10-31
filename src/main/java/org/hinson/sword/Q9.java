@@ -9,7 +9,6 @@ public class Q9 {
 
     public Deque<Integer> out = new LinkedList<>();
 
-
     public void push(int node) {
         in.push(node);
     }

@@ -9,7 +9,7 @@ public class Q4 {
         int rows = matrix.length, cols = matrix[0].length;
 
         int row = 0;
-        int col = matrix[0].length - 1;
+        int col = cols = matrix[0].length - 1;
 
         while (row < rows && col >= 0) {
             if (matrix[row][col] == target) {
