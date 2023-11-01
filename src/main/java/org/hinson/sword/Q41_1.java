@@ -2,7 +2,7 @@ package org.hinson.sword;
 
 import java.util.PriorityQueue;
 
-public class Q41 {
+public class Q41_1 {
 
     /**
      * 大顶堆
