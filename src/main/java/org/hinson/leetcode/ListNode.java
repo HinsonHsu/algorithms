@@ -3,7 +3,7 @@ package org.hinson.leetcode;
 public class ListNode {
 
     int val;
-    ListNode next;
+    public ListNode next;
 
     public ListNode() {
     }
