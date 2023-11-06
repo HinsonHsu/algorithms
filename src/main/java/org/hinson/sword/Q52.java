@@ -10,13 +10,13 @@ public class Q52 {
 
         while (l1 != l2) {
             if (l1 == null) {
-                l1 = pHead2.getNext();
+                l1 = pHead2;
             } else {
                 l1 = l1.getNext();
             }
 
             if (l2 == null) {
-                l2 = pHead1.getNext();
+                l2 = pHead1;
             } else {
                 l2 = l2.getNext();
             }
